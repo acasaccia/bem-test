@@ -1,8 +1,10 @@
+/* Block */
 .map {
   height: 100%;
   width: 100%;
 }
 
+/* Element */
 .map__marker {
   background-size: 80%;
   background-position: center center;
@@ -11,18 +13,22 @@
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+/* Element modifier */
 .map__marker_selected {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
+/* Element modifier */
 .map__marker_charmander {
   background-image: url("../images/charmander.png");
 }
 
+/* Element modifier */
 .map__marker_pikachu {
   background-image: url("../images/pikachu.png");
 }
 
+/* Element modifier */
 .map__marker_bulbasaur {
   background-image: url("../images/bulbasaur.png");
 }

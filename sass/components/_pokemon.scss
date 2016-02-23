@@ -1,4 +1,4 @@
-/* block */
+/* Block */
 .pokemon {
   font-family: $font-family-text;
   background-color: #fff;
@@ -9,17 +9,18 @@
   color: $font-color;
 }
 
-/* block modifier */
+/* Block modifier */
 .pokemon_selected {
   border: 2px solid $border-color;
 }
 
+/* Element */
 .pokemon__information {
   padding-left: 5em;
 }
 
-/* elements */
-/* note: we don't nest them! */
+/* Elements */
+/* Note: even though they are contained in information we don't nest them! */
 .pokemon__image {
   margin-top: 1em;
   width: 4em;
