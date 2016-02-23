@@ -1,6 +1,6 @@
 .pokemon-list {
   margin: 0;
-  padding-left: 0em;
+  padding-left: 0;
   padding-top: 1em;
   height: calc(100% - 1em);
   overflow-y: auto;
@@ -9,4 +9,15 @@
 
 .pokemon-list__item {
   list-style-type: none;
+}
+
+.pokemon-list_theme_horizontal {
+  padding-top: 0;
+  height: 10em;
+  bottom: 0;
+}
+.pokemon-list_theme_horizontal__item  {
+  width: 29%;
+  margin: 1%;
+  float: left;
 }
