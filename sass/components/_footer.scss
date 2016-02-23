@@ -1,0 +1,14 @@
+.footer {
+  background-color: #eee;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  .pokemon-list {
+    padding-top: 0;
+  }
+  .pokemon-list__item  {
+    width: 29%;
+    margin: 1%;
+    float: left;
+  }
+}

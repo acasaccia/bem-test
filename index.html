@@ -12,13 +12,13 @@
     <script src="components/knockout/dist/knockout.debug.js"></script>
 </head>
 <body>
-    <div id="layout-header" class="header">
+    <div class="header">
         <h1 class="header__title">
             <a class="header__link" href="/"><img class="header__logo" src="images/pokeball.png" /></a>
             <a class="header__link" href="/">Pokémon Network Care</a>
         </h1>
     </div>
-    <div id="layout-panel">
+    <div class="sidebar">
         <ul data-bind="foreach: pokemons" class="pokemon-list">
             <li data-bind="css: {pokemon_selected: selected}" class="pokemon-list__item pokemon">
                 <img class="pokemon__image" data-bind="attr: {src: image}" />
@@ -30,12 +30,12 @@
             </li>
         </ul>
     </div>
-    <div id="layout-main">
+    <div class="main-content">
         <div id="main-map" class="map"></div>
     </div>
 
     <!--
-    <div id="layout-footer">
+    <div class="footer">
         <ul data-bind="foreach: pokemons" class="pokemon-list">
             <li data-bind="css: {pokemon_selected: selected}" class="pokemon-list__item pokemon">
                 <img class="pokemon__image" data-bind="attr: {src: image}" />
