@@ -12,16 +12,17 @@
     <script src="components/knockout/dist/knockout.debug.js"></script>
 </head>
 <body>
-    <!--<div class="header">-->
-    <div class="header header_theme_horizontal">
+
+    <div class="header">
+    <!--<div class="header header_theme_horizontal">-->
         <h1 class="header__title">
             <a class="header__link" href="/"><img class="header__logo" src="images/pokeball.png" /></a>
             <a class="header__link" href="/">Pokémon Network Care</a>
         </h1>
     </div>
 
-    <!--<div class="sidebar">-->
-    <div class="sidebar sidebar_theme_horizontal">
+    <div class="sidebar">
+    <!--<div class="sidebar sidebar_theme_horizontal">-->
         <ul data-bind="foreach: pokemons" class="pokemon-list">
             <li data-bind="css: {pokemon_selected: selected}" class="pokemon-list__item pokemon">
                 <img class="pokemon__image" data-bind="attr: {src: image}" />
@@ -34,13 +35,13 @@
         </ul>
     </div>
 
-    <!--<div class="main-content">-->
-    <div class="main-content main-content_theme_horizontal">
+    <div class="main-content">
+    <!--<div class="main-content main-content_theme_horizontal">-->
         <div id="main-map" class="map"></div>
     </div>
 
-    <!--<div class="footer">-->
-    <div class="footer footer_theme_horizontal">
+    <div class="footer">
+    <!--<div class="footer footer_theme_horizontal">-->
         <ul data-bind="foreach: pokemons" class="pokemon-list pokemon-list_theme_horizontal">
             <li data-bind="css: {pokemon_selected: selected}" class="pokemon-list__item pokemon-list_theme_horizontal__item pokemon">
                 <img class="pokemon__image" data-bind="attr: {src: image}" />
