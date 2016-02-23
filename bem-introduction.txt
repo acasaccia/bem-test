@@ -128,7 +128,7 @@ Do not apply the modifier to a parent class!
 .menu_theme_morning-forest ✔
 .message_theme_morning-forest ✔
 
-+ avoids ambiguity
++ avoids specifity problems
 + it's faster
 - it's verbose
 
