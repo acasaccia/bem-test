@@ -1,8 +1,6 @@
 # pokemon-network-care
 
-An introduction to BEM
-
-acasaccia@gmail.com
+A tiny application to test the BEM naming convention
 
 ---
 
@@ -92,13 +90,16 @@ Avoid specifity problems
     <button class="submit">
     button.submit ✘
     /* ... */
-    .submit_active ! // doesn't work
+    .submit_active ! /* doesn't work because of specifity! */
 
 ---
 
 #### Modifiers ✔
 
-Always include the default block name in the class (CSS rules reuse)
+Always include the default block name in the class
+
+\+ CSS rules reuse<br>
+\+ helps search
 
     <div class="menu menu_theme_morning-forest">...</div> ✔
 
@@ -106,8 +107,8 @@ Always include the default block name in the class (CSS rules reuse)
 
 #### Global modifiers ✘
 
-Do not apply the modifier to a parent class!
-Modifiers in BEM are thought to be applied only to the element they directly affect
+Do not apply modifiers to a parent class!
+Modifiers in BEM are thought to be applied only to the element they directly affect.
 
     <body class="app__theme_morning-forest">
       <div class="menu">...</div>
@@ -127,8 +128,6 @@ Modifiers in BEM are thought to be applied only to the element they directly aff
     .menu_theme_morning-forest ✔
     .message_theme_morning-forest ✔
 
-\+ avoids specifity problems
-
-\+ it's faster
-
+\+ avoids specifity problems<br>
+\+ it's faster<br>
 \- it's verbose
