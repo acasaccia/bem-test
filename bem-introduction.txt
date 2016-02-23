@@ -52,7 +52,6 @@ MODIFIER
 It describes a state of a Block or an Element.
 Rules: it is delimited by a single underscore (_).
 
-
 - Boolean modifiers:
 
 .block_selected ✔
@@ -98,17 +97,32 @@ Elements cannot be swapped around, removed or added without modifying the existi
 
 ---
 
-How to apply modifiers (1):
+Tag selectors? ✘
 
-Always include the default block name in the class (reuse CSS rules)
+Avoid specifity problems
 
-<div class="menu menu_theme_morning-forest">...</div>  ✔
+<button class="submit">
+
+button.submit ✘
+...
+.submit_active ! // doesn't work
+
+[example]
 
 ---
 
-How to apply modifiers (2):
+Modifiers ✔
+
+Always include the default block name in the class (CSS rules reuse)
+
+<div class="menu menu_theme_morning-forest">...</div> ✔
+
+---
+
+Global modifiers ✘
 
 Do not apply the modifier to a parent class!
+Modifiers in BEM are thought to be applied only to the element they directly affect
 
 <body class="app__theme_morning-forest">
 	<div class="menu">...</div>
