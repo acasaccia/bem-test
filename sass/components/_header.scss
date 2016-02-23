@@ -1,11 +1,10 @@
-/* note: we could have used
-  .header h1
-  but that's against BEM! */
-
 .header__link {
   color: #fff;
 }
 
+/* note: we could have used
+  .header h1
+  but that's against BEM! */
 .header__title {
   font-family: $font-family-title;
   padding: 1em 2em;
