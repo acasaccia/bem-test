@@ -1,0 +1,44 @@
+/* block */
+.pokemon {
+  font-family: $font-family-text;
+  background-color: #fff;
+  margin: 1em;
+  padding: 1em;
+  border: 2px solid transparent;
+  border-radius: 0.25em;
+  color: $font-color;
+}
+
+/* block modifier */
+.pokemon_selected {
+  border: 2px solid $border-color;
+}
+
+.pokemon__information {
+  padding-left: 5em;
+}
+
+/* elements */
+/* note: we don't nest them! */
+.pokemon__image {
+  margin-top: 1em;
+  width: 4em;
+  height: 4em;
+  float: left;
+  margin-right: 1em;
+}
+
+.pokemon__name {
+  font-family: $font-family-title;
+  font-weight: bold;
+  padding-bottom: 0.25em;
+}
+
+.pokemon__description {
+  padding-bottom: 0.5em;
+}
+
+.pokemon__last-seen {
+  font-style: italic;
+  color: $font-grayed;
+}

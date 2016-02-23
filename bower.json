@@ -1,0 +1,25 @@
+{
+  "name": "pokemon-network-care",
+  "authors": [
+    "Andrea Casaccia <acasaccia@gmail.com>"
+  ],
+  "description": "A small application to test BEM",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.1",
+    "knockout": "^3.4.0",
+    "leaflet": "^0.7.7"
+  }
+}

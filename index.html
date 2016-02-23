@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokémon Network Care</title>
+    <link rel="stylesheet" href="stylesheets/main.css" />
+    <link rel="stylesheet" href="components/leaflet/dist/leaflet.css" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Domine' rel='stylesheet' type='text/css'>
+    <script src="components/jquery/dist/jquery.js"></script>
+    <script src="components/leaflet/dist/leaflet-src.js"></script>
+    <script src="components/knockout/dist/knockout.debug.js"></script>
+</head>
+<body>
+    <div id="layout-header" class="header">
+        <h1 class="header__title">
+            <a class="header__link" href="/"><img class="header__logo" src="images/pokeball.png" /></a>
+            <a class="header__link" href="/">Pokémon Network Care</a>
+        </h1>
+    </div>
+    <div id="layout-panel">
+        <ul data-bind="foreach: pokemons" class="pokemon-list">
+            <li data-bind="css: {pokemon_selected: selected}" class="pokemon-list__item pokemon">
+                <img class="pokemon__image" data-bind="attr: {src: image}" />
+                <div class="pokemon__information">
+                    <div class="pokemon__name" data-bind="text: name"></div>
+                    <div class="pokemon__description" data-bind="text: description"></div>
+                    <div class="pokemon__last-seen">Last seen: <!--ko text: location--><!--/ko--></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div id="layout-main">
+        <div id="main-map" class="map"></div>
+    </div>
+
+    <!--
+    <div id="layout-footer">
+        <ul data-bind="foreach: pokemons" class="pokemon-list">
+            <li data-bind="css: {pokemon_selected: selected}" class="pokemon-list__item pokemon">
+                <img class="pokemon__image" data-bind="attr: {src: image}" />
+                <div class="pokemon__information">
+                    <div class="pokemon__name" data-bind="text: name"></div>
+                    <div class="pokemon__description" data-bind="text: description"></div>
+                    <div class="pokemon__last-seen">
+                        Last seen: <!--ko text: location--><!--/ko-->
+                    <!--
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    -->
+
+    <script src="javascripts/app.js"></script>
+    <script src="javascripts/map.js"></script>
+</body>
+</html>

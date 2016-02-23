@@ -1,0 +1,28 @@
+.map {
+  height: 100%;
+  width: 100%;
+}
+
+.map__marker {
+  background-size: 80%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.map__marker_selected {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.map__marker_charmander {
+  background-image: url("../images/charmander.png");
+}
+
+.map__marker_pikachu {
+  background-image: url("../images/pikachu.png");
+}
+
+.map__marker_bulbasaur {
+  background-image: url("../images/bulbasaur.png");
+}
