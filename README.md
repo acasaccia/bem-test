@@ -1,6 +1,6 @@
 # An introduction to BEM naming convention
 
-pokemon-network-care a tiny application to test the BEM naming convention
+with *pokemon-network-care*: a tiny application to test the BEM naming convention
 
 ---
 
