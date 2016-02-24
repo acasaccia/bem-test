@@ -65,8 +65,8 @@ Negative definition:
 
     If (it's an attribute/state of an entity)
       Then it's a Modifier
-    Else If (it a piece of UI that depends on another)
-    Then it's an Element
+    Else If (it's a piece of UI that depends on another)
+      Then it's an Element
     Else
       It's a good candidate for a Block
       It should be implemented as a reusable piece of UI
