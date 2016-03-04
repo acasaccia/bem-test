@@ -1,7 +1,5 @@
 # An introduction to BEM naming convention
 
----
-
 #### What's BEM
 
 *Technology for creating web applications*
